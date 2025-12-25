@@ -1,0 +1,25 @@
+<div
+  class="d-flex flex-column flex-shrink-0 p-3 bg-light border-end"
+  style="width: 280px"
+>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a
+        href="{% url 'tasks:task_list' %}"
+        class="nav-link {% if task_page %}active{% else %}link-dark{% endif %}"
+      >
+        <i class="bi bi-house me-2"></i>
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="{% url 'tasks:tag_list' %}"
+        class="nav-link {% if tag_page %}active{% else %}link-dark{% endif %}"
+      >
+        <i class="bi bi-tag me-2"></i>
+        Tags
+      </a>
+    </li>
+  </ul>
+</div>

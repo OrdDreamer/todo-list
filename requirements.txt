@@ -1,5 +1,7 @@
 asgiref==3.11.0
 Django==6.0
+django-crispy-forms==2.3
+crispy-bootstrap5==2024.2
 flake8==7.3.0
 mccabe==0.7.0
 pycodestyle==2.14.0
