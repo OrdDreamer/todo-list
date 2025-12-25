@@ -84,7 +84,15 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-### Step 5: Create a superuser (optional)
+### Step 5: Load fixtures (optional)
+
+To load initial data with sample tasks and tags:
+
+```bash
+python manage.py loaddata initial_data.json
+```
+
+### Step 6: Create a superuser (optional)
 
 To access the Django admin panel:
 
@@ -123,6 +131,8 @@ todo-list/
 │   ├── forms.py               # Forms
 │   ├── urls.py                # URL routes
 │   ├── admin.py               # Admin panel settings
+│   ├── fixtures/              # Initial data fixtures
+│   │   └── initial_data.json
 │   └── templates/             # Task templates
 │       └── tasks/
 │           ├── task_list.html
